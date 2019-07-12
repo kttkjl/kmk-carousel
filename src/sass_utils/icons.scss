@@ -1,0 +1,19 @@
+$kmkIconSize: 1rem;
+$peakopacity: 1;
+.kmkArrowRight {
+  height: $kmkIconSize;
+  width: $kmkIconSize;
+  border-right: $kmkIconSize/3 solid rgba(255, 255, 255, $peakopacity);
+  border-top: $kmkIconSize/3 solid rgba(255, 255, 255, $peakopacity);
+  transform: translate($kmkIconSize/3, $kmkIconSize * 4/3) rotate(45deg);
+  transform: translate($kmkIconSize/2, 0px) rotate(45deg);
+}
+
+.kmkArrowLeft {
+  height: $kmkIconSize;
+  width: $kmkIconSize;
+  border-left: $kmkIconSize/3 solid rgba(255, 255, 255, $peakopacity);
+  border-top: $kmkIconSize/3 solid rgba(255, 255, 255, $peakopacity);
+  transform: translate($kmkIconSize/3, $kmkIconSize * 4/3) rotate(45deg);
+  transform: translate(-$kmkIconSize/2, 0px) rotate(-45deg);
+}
