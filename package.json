@@ -1,6 +1,6 @@
 {
   "name": "kmk-carousel",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Simple infinite scroll carousel",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -8,6 +8,10 @@
     "README.md",
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kttkjl/kmk-carousel"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-rimraf": "rimraf dist && NODE_ENV=production babel src --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
