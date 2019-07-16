@@ -21,7 +21,7 @@
     "transpile": "babel src -d dist --copy-files",
     "prepublishOnly": "npm run transpile"
   },
-  "keywords": "react carousel container",
+  "keywords": ["react", "carousel", "container"],
   "author": "kttkjl",
   "license": "MIT",
   "devDependencies": {

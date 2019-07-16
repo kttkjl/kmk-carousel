@@ -14,23 +14,18 @@ Supposedly to use the same props as Semantic-UI's card component ... kinda
     {
       image: "https://image.url.com",
       header: "Sample header",
-      description: "Sample description"
+      description: "Sample description",
+      href: "https://your.demo.site",
+      github: "https://the.github.link"
     },
     {
       image: "https://image.url.com",
       header: "Sample header",
-      description: "Sample description"
+      description: "Sample description",
+            href: "https://your.demo.site",
+      github: "https://the.github.link"
     },
-    {
-      image: "https://image.url.com",
-      header: "Sample header",
-      description: "Sample description"
-    },
-    {
-      image: "https://image.url.com",
-      header: "Sample header",
-      description: "Sample description"
-    }
+    ...
   ]
 
   const someComponent = props => {
@@ -43,6 +38,25 @@ Supposedly to use the same props as Semantic-UI's card component ... kinda
 
 ```
 
-## Notes
+## Proptypes
+```jsx
+const propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      data: PropTypes.shape({
+        image: PropTypes.string,
+        header: PropTypes.string,
+        description: PropTypes.string,
+        href: PropTypes.string,
+        github: PropTypes.string
+      })
+    })
+  )
+};
+```
 
-### More prop types to come with github linking and demo site
+## Screenshot
+![alt text](https://i.imgur.com/7WB4M8z.png "The background is actually transparent")
+
+## Notes
+Automatic color detection on the overlay may be in production
