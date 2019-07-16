@@ -22,7 +22,7 @@ Supposedly to use the same props as Semantic-UI's card component ... kinda
       image: "https://image.url.com",
       header: "Sample header",
       description: "Sample description",
-            href: "https://your.demo.site",
+      href: "https://your.demo.site",
       github: "https://the.github.link"
     },
     ...
